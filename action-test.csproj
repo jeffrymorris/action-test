@@ -17,7 +17,7 @@
 
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/jeffrymorris/action-test</PackageProjectUrl>
-    <PackageIconUrl>https://raw.githubusercontent.com/couchbaselabs/Linq2Couchbase/master/Packaging/couchbase-logo.png</PackageIconUrl>
+    <PackageIcon>icon.png</PackageIcon>
     <PackageReleaseNotes></PackageReleaseNotes>
 
     <RepositoryUrl>https://github.com/jeffrymorris/action-test</RepositoryUrl>
@@ -33,8 +33,13 @@
     <NoWarn>$(NoWarn);CS1591</NoWarn>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <ApplicationIcon />
-    <StartupObject /> <!-- suppress warnings for missing XML comments on public members -->
+    <StartupObject />
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild> <!-- suppress warnings for missing XML comments on public members -->
 
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="icon.png" Pack="true" Visible="false" PackagePath="" />
+  </ItemGroup>
 
 </Project>
