@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>action_test</RootNamespace>
+
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <VersionSuffix>build.$([System.DateTime]::UtcNow.ToString('yyyyMMddHHmm'))</VersionSuffix>
+    <AssemblyName>Sofabase.ActionTest</AssemblyName>
+    <PackageId>Sofabase.ActionTest</PackageId>
+    <Authors>Sofabase, Inc.</Authors>
+    <Company>Sofabase, Inc.</Company>
+    <Product>Sofabase.ActionTest</Product>
+    <Description>Action test - nuget package on push</Description>
+    <Copyright>Copyright 2020</Copyright>
+
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/jeffrymorris/action-test</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/couchbaselabs/Linq2Couchbase/master/Packaging/couchbase-logo.png</PackageIconUrl>
+    <PackageReleaseNotes></PackageReleaseNotes>
+
+    <RepositoryUrl>https://github.com/jeffrymorris/action-test</RepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
+    <RootNamespace>Couchbase</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>8.0</LangVersion>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <ApplicationIcon />
+    <StartupObject /> <!-- suppress warnings for missing XML comments on public members -->
+
+  </PropertyGroup>
+
+</Project>
