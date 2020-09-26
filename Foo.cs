@@ -8,6 +8,8 @@ namespace Couchbase
     {
         public string Bar { get; set; }
 
+        public int Vaz { get; set; }
+
         public override string ToString()
         {
             return Bar ?? "Hello, world.";
