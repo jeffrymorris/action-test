@@ -5,10 +5,11 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>action_test</RootNamespace>
 
-    <VersionPrefix>1.0.0</VersionPrefix>
-    <VersionSuffix>build.$([System.DateTime]::UtcNow.ToString('yyyyMMddHHmm'))</VersionSuffix>
-    <AssemblyName>Sofabase.ActionTest</AssemblyName>
-    <PackageId>Sofabase.ActionTest</PackageId>
+   <!--<VersionPrefix>1.0.0</VersionPrefix>
+    <VersionSuffix>build.$([System.DateTime]::UtcNow.ToString('yyyyMMddHHmm'))</VersionSuffix>-->
+    <Version>1.0.0-build.$([System.DateTime]::UtcNow.ToString('yyyyMMddHHmm'))</Version>
+   <AssemblyName>Sofabase.ActionTest</AssemblyName>
+<PackageId>Sofabase.ActionTest</PackageId>
     <Authors>Sofabase, Inc.</Authors>
     <Company>Sofabase, Inc.</Company>
     <Product>Sofabase.ActionTest</Product>
