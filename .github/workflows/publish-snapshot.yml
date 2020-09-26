@@ -18,8 +18,8 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --configuration Release --no-restore
-    - name: Publish FluentEmail.Core
-      uses: brandedoutcast/publish-nuget@v2.5.2
+    - name: Publish action-test
+      uses: brandedoutcast/publish-nuget@v2.5.5
       with:
           PROJECT_FILE_PATH: action-test.csproj
           NUGET_KEY: ${{secrets.NUGET_API_KEY}}
